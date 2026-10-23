@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Power of Sequencing</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="intro">
+    <p class="eyebrow">THREE PHOTOS, TWO STORIES</p>
+    <h1>The Power of Sequencing</h1>
+    <p class="subtitle">
+      Same photos, different order. Does the story change?
+    </p>
+  </header>
+
+  <main>
+    <nav class="story-buttons" aria-label="Choose a story">
+      <button id="storyAButton" class="active">A Good Day Out</button>
+      <button id="storyBButton">Feeling Left Out</button>
+    </nav>
+
+    <section class="story-heading">
+      <p id="storyNumber" class="eyebrow">STORY 01</p>
+      <h2 id="storyTitle">A Good Day Out</h2>
+      <p id="storyDescription">
+        Getting ready, catching up with a friend, and heading home.
+      </p>
+    </section>
+
+    <section class="story" id="story">
+      <article class="scene">
+        <img src="images/getting-ready.jpg" alt="Someone getting ready to go out">
+        <div class="scene-text">
+          <span>01 / BEGINNING</span>
+          <h3>Getting ready</h3>
+          <p>You get ready to head out.</p>
+        </div>
+      </article>
+
+      <article class="scene">
+        <img src="images/cafe.jpg" alt="People sitting and talking in a cafe">
+        <div class="scene-text">
+          <span>02 / MIDDLE</span>
+          <h3>Meeting up</h3>
+          <p>You meet a friend and have a great time.</p>
+        </div>
+      </article>
+
+      <article class="scene">
+        <img src="images/at-home.jpg" alt="Family relaxing together in a living room">
+        <div class="scene-text">
+          <span>03 / END</span>
+          <h3>Back home</h3>
+          <p>You get home feeling happy and relaxed.</p>
+        </div>
+      </article>
+    </section>
+
+    <footer class="bottom">
+      <p id="storyStatus" aria-live="polite">
+        You're viewing story 1 of 2.
+      </p>
+      <button id="switchButton" class="switch-button">
+        See the other side →
+      </button>
+    </footer>
+
+    <section class="reflection">
+      <p class="eyebrow">THINK ABOUT IT</p>
+      <p>
+        Nothing about the photos has changed. Only their order.
+        How does that affect the way you see the day?
+      </p>
+    </section>
+  </main>
+</body>
+</html>
